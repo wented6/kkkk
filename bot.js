@@ -70,7 +70,7 @@ client.on('message', async msg => { // eslint-disable-line
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
   
-					.setFooter("F") 
+					.setFooter("") 
 					.setAuthor(client.user.username, client.user.avatarURL)
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
@@ -257,4 +257,4 @@ if (message.content.startsWith(adminprefix + 'st')) {
 
 
 
-	client.login(process.env.BOT_TOKEN);
+	client.login(process.env.B);
